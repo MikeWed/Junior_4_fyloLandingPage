@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1em;
+}
+header img {
+  width: 80px;
+}
+header nav {
+  float: right;
+}
+header nav a {
+  margin-left: 1.3em;
+  text-decoration: none;
+  color: hsl(243deg, 87%, 12%);
+  font-family: "Open Sans", sans-serif;
+}
+header nav a:hover {
+  color: hsl(238deg, 22%, 44%);
+}
+
+main {
+  position: relative;
+}
+main .firstSection {
+  padding: 3em 1em 0 1em;
+  text-align: center;
+  margin-bottom: 10em;
+}
+main .firstSection img {
+  width: 100%;
+  padding: 1em 0;
+}
+main .firstSection .firstSectionText {
+  color: hsl(243deg, 87%, 12%);
+}
+main .firstSection .firstSectionText h1 {
+  font-size: 25px;
+  line-height: 1.4;
+}
+main .firstSection .firstSectionText .containerForm {
+  position: relative;
+}
+main .firstSection .firstSectionText .containerForm form {
+  margin: 2em 0 1em;
+}
+main .firstSection .firstSectionText .containerForm form input {
+  width: 100%;
+  line-height: 3em;
+  border: 1px solid black;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 2em;
+}
+main .firstSection .firstSectionText .containerForm form input::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+main .firstSection .firstSectionText .containerForm form input:focus {
+  border-width: 2px;
+}
+main .firstSection .firstSectionText .containerForm form #warning1 {
+  position: relative;
+  display: none;
+  text-align: left;
+  color: red;
+  font-size: 12px;
+  top: -10px;
+}
+main .firstSection .firstSectionText button {
+  background-color: hsl(224deg, 93%, 58%);
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  line-height: 3em;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px 0 hsl(0deg, 0%, 75%);
+  transition: background 200ms linear;
+}
+main .firstSection .firstSectionText button:hover {
+  background-color: hsl(224deg, 93%, 70%);
+}
+main .secondSection {
+  background-color: hsl(240deg, 75%, 98%);
+  position: relative;
+  padding: 1em;
+  text-align: center;
+}
+main .secondSection::before {
+  content: "";
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  background-image: url(/images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  top: -50px;
+  left: 0;
+}
+@media screen and (min-width: 375px) {
+  main .secondSection::before {
+    background-image: url(/images/bg-curve-desktop.svg);
+    height: 125px;
+    top: -110px;
+  }
+}
+main .secondSection > img {
+  width: 100%;
+  padding: 1em 1em;
+}
+main .secondSection h3 {
+  text-align: center;
+}
+main .secondSection p {
+  color: hsl(238deg, 22%, 44%);
+}
+main .secondSection a {
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid hsl(170deg, 45%, 43%);
+  margin: 0 auto;
+  padding-bottom: 0.3em;
+  text-decoration: none;
+  color: hsl(170deg, 45%, 43%);
+}
+main .secondSection a:hover {
+  filter: brightness(1.4);
+}
+main .secondSection a .arrow {
+  position: relative;
+  padding: 0;
+  width: 22px;
+  top: 5px;
+  left: 3px;
+}
+main .secondSection .card {
+  width: 300px;
+  background-color: white;
+  box-shadow: 0 0 15px -5px hsl(0deg, 0%, 75%);
+  border-radius: 8px;
+  margin: 3em auto;
+  padding: 1.5em 1em 1.5em 2em;
+  text-align: left;
+  line-height: 1.8;
+}
+main .secondSection .card p {
+  margin-top: 0;
+  font-size: 11px;
+  color: black;
+}
+main .secondSection .card .testimonial .avatar {
+  border-radius: 50%;
+  width: 30px;
+  float: left;
+  margin-right: 1em;
+}
+main .secondSection .card .testimonial .name {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+main .secondSection .card .testimonial .job {
+  position: relative;
+  font-size: 8px;
+  top: -3px;
+  margin-bottom: 0;
+}
+main .thirdSection {
+  background-color: hsl(238deg, 22%, 44%);
+  text-align: center;
+  padding: 3em;
+  color: white;
+}
+main .thirdSection form {
+  margin: 2em 0 1em;
+}
+main .thirdSection form input {
+  width: 90%;
+  line-height: 3em;
+  box-shadow: 0 2px 5px 0 rgb(51, 51, 51);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding-left: 1em;
+}
+main .thirdSection form input::placeholder {
+  color: hsl(0deg, 0%, 75%);
+}
+main .thirdSection form #warning2 {
+  display: none;
+}
+main .thirdSection button {
+  background-color: hsl(224deg, 93%, 58%);
+  border: none;
+  border-radius: 3px;
+  width: 90%;
+  line-height: 3em;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 5px 0 rgb(51, 51, 51);
+  transition: background 200ms linear;
+}
+main .thirdSection button:hover {
+  background-color: hsl(224deg, 93%, 70%);
+}
+
+footer {
+  background-color: hsl(243deg, 87%, 12%);
+  color: white;
+  padding: 3em 2em;
+}
+footer .logo {
+  filter: brightness(0) saturate(100%) invert(1);
+  width: 150px;
+  margin-bottom: 2em;
+}
+footer .footerFlexContainer .innerFlexData {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 3px;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+footer .footerFlexContainer .innerFlexData p {
+  margin: 0;
+}
+footer .links {
+  margin-top: 3em;
+}
+footer .links div {
+  margin-bottom: 1em;
+}
+footer .links div a {
+  text-decoration: none;
+  color: white;
+}
+footer .links div a:hover {
+  color: hsl(224deg, 93%, 70%);
+}
+footer .social {
+  text-align: center;
+  margin-top: 2em;
+}
+footer .social a {
+  border: 1px solid white;
+  display: inline-block;
+  width: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  margin: 2px;
+  color: white;
+  transition: all 200ms linear;
+}
+footer .social a:hover {
+  color: hsl(224deg, 93%, 70%);
+  border-color: hsl(224deg, 93%, 70%);
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    padding: 4em;
+  }
+  main .firstSection {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 4em;
+    gap: 3em;
+  }
+  main .firstSection img {
+    order: 2;
+  }
+  main .firstSection .containerForm {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+    padding-right: 3em;
+  }
+  main .firstSection .containerForm form {
+    flex: 1 0 60%;
+  }
+  main .secondSection {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 4em;
+    gap: 3em;
+  }
+  main .secondSection img {
+    order: 2;
+    flex: 0 0 50%;
+  }
+  main .secondSection .secondSectionText h3 {
+    font-size: 25px;
+    text-align: left;
+  }
+  main .secondSection .secondSectionText p {
+    padding-right: 5em;
+  }
+  main .secondSection .secondSectionText .card {
+    margin: 2em 0;
+  }
+  main .thirdSection {
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 3em 5em;
+  }
+  main .thirdSection .thirdSectionText {
+    text-align: left;
+    flex: 0 0 50%;
+    padding-right: 8em;
+  }
+  main .thirdSection .thirdSectionText h3 {
+    font-size: 25px;
+  }
+  main .thirdSection .thirdSectionText p {
+    line-height: 1.6;
+  }
+  main .thirdSection .thirdSectionForm {
+    text-align: left;
+    flex: 1 0 0;
+  }
+  main .thirdSection .thirdSectionForm input {
+    width: 90%;
+  }
+  main .thirdSection .thirdSectionForm button {
+    width: 200px;
+  }
+  footer {
+    padding: 5em 5em;
+  }
+  footer .logo {
+    margin-bottom: 1em;
+  }
+  footer .footerFlexContainer {
+    display: flex;
+    align-items: baseline;
+  }
+  footer .footerFlexContainer .footerFlexItem {
+    flex-grow: 1;
+  }
+  footer .footerFlexContainer .links {
+    margin: 0;
+  }
+  footer .footerFlexContainer .social {
+    margin: unset;
+    text-align: left;
+  }
+  footer .footerFlexContainer .social a {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
